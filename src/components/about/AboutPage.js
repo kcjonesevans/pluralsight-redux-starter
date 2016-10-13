@@ -1,7 +1,7 @@
 import React from 'react';
 
 class AboutPage extends React.Component{
-  renter() {
+  render() {
     return(
       <div>
         <h1>About</h1>
@@ -11,4 +11,4 @@ class AboutPage extends React.Component{
   }
 }
 
-export deafult HomePageAboutPage
+export default AboutPage;
