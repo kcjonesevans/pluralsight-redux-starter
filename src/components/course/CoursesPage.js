@@ -1,4 +1,6 @@
-import React, {PropTypes} from 'react'
+import React, {PropTypes} from 'react';
+import connect from 'react-redux';
+
 
 class CoursesPage extends React.Component{
   constructor(props, context){
@@ -33,4 +35,10 @@ class CoursesPage extends React.Component{
   }
 }
 
-export default CoursesPage;
+function mapStatetoProps(state, ownProps){
+  return {
+    courses: state.courses
+  }
+}
+
+export default connect(mapStatetoProps)(CoursesPage);
